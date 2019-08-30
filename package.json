@@ -4,7 +4,8 @@
   "description": "CSS spinners for React",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint './src/**/*.js'",
+    "lint-fix": "prettier-eslint 'src/**/*.js' --write"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,19 @@
   "bugs": {
     "url": "https://github.com/js-art/react-art-spinners/issues"
   },
-  "homepage": "https://github.com/js-art/react-art-spinners#readme"
+  "homepage": "https://github.com/js-art/react-art-spinners#readme",
+  "devDependencies": {
+    "eslint": "^6.2.2",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier-eslint": "^9.0.0",
+    "prettier-eslint-cli": "^5.0.0"
+  },
+  "dependencies": {
+    "yarn": "^1.17.3"
+  }
 }
