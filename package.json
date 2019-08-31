@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint './src/**/*.js'",
-    "lint-fix": "prettier-eslint 'src/**/*.js' --write"
+    "lint:fix": "prettier-eslint 'src/**/*.js' --write"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,14 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/js-art/react-art-spinners/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": ["npm run lint:fix", "git add"]
   },
   "homepage": "https://github.com/js-art/react-art-spinners#readme",
   "devDependencies": {
@@ -30,6 +38,8 @@
     "prettier-eslint-cli": "^5.0.0"
   },
   "dependencies": {
+    "husky": "^3.0.4",
+    "lint-staged": "^9.2.5",
     "yarn": "^1.17.3"
   }
 }
