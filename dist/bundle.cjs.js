@@ -1,3 +1,1 @@
-'use strict';
-
-console.log('hello' + 'my friend');
+"use strict";function _interopDefault(e){return e&&"object"==typeof e&&"default"in e?e.default:e}var React=_interopDefault(require("react")),Spinner=function(e){React.createElement("h1",null,"spinner")};module.exports=Spinner;
